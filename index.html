@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <div class="tela-inicial display-flex">
+        <img src="resources/images/logo 2.png" alt="">
+        <input type="text" class="tela-inicial-input" placeholder="Digite seu nome">
+        <div class="tela-inicial-btn-entrar" onclick="telaInicial()">Entrar</div>
+    </div>
+    <div class="header hide">
         <div><img src="resources/images/logo 1.png" alt=""></div>
         <div><img src="resources/images/Vector.png" alt=""></div>
     </div>
-    <div class="main">
+    <div class="main hide">
         <ul class="chat">
-            <li class="chatMsgEntrouNaSala"> <pre> (09:21:45) </pre> <div class="msgTexto">Exemplo 1</div></li>
-            <li class="chatMsgEntrouNaSala"> <pre> (09:21:45) </pre> <div class="msgTexto">Exemplo 1</div></li>
+
         </ul>
     </div>
-    <div class="footer">
+    <div class="footer hide">
         <input type="text" class="inputMessage" placeholder="Escreva aqui">
-        <ion-icon name="paper-plane-outline"></ion-icon>
+        <ion-icon name="paper-plane-outline" onclick="adicionaMensagemChat()"></ion-icon>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
