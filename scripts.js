@@ -128,7 +128,10 @@ function erroAoEnviar(erro) {
 }
 
 
+
   envioComEnter();
   //entrarNaSala();
   //carregarChat();
   //adicionaMensagemChat();
+
+
